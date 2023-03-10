@@ -2,6 +2,10 @@
 
 echo '=== INSTALLING ZSH ==='
 
+# change directory to the shell file's directory
+SCRIPT_DIR=`dirname $0`
+cd $SCRIPT_DIR
+
 sudo rm -rf \
 $HOME/.zshrc \
 $HOME/.zsh_history \
