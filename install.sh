@@ -1,4 +1,4 @@
-# rm and ls should not use directory/, just directly
+# rm and ls should not use directory/, just directory
 
 echo '=== INSTALLING ZSH ==='
 
@@ -18,8 +18,6 @@ ln -s $(pwd)/homeuser/.zsh_history $HOME/.zsh_history
 ln -s $(pwd)/homeuser/.p10k.zsh $HOME/.p10k.zsh
 ln -s $(pwd)/homeuser/.zsh $HOME/.zsh
 ln -s $(pwd)/homeuser/.fonts $HOME/.fonts
-
-sudo fc-cache
 
 sh -c $(pwd)/homeuser/.zsh/powerlevel10k/gitstatus/install
 
